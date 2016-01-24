@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[WXD's official site]]></title>
-  <link href="http://wxdwfc.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Photograph | WXD's official site]]></title>
+  <link href="http://wxdwfc.github.io/blog/categories/photograph/atom.xml" rel="self"/>
   <link href="http://wxdwfc.github.io/"/>
   <updated>2016-01-24T21:49:43+08:00</updated>
   <id>http://wxdwfc.github.io/</id>
@@ -28,7 +28,7 @@
 <ol>
 <li><p>为什么会有虚像和实像？</p>
 
-<p><img src="http://wxdwfc.github.io/images/blog_1_1.jpg" alt="Alt text" /></p>
+<p><img src="/images/blog_1_1.jpg" alt="Alt text" /></p>
 
 <p>非对焦点上的光不会被汇聚在感光元件上的一个点，所以会产生虚像。
 只有汇聚成点的像才能最清晰的被成像。</p>
@@ -40,12 +40,12 @@
 <li><p>焦距
 焦距是指镜头和感光元件之间的距离。</p>
 
-<p><img src="http://wxdwfc.github.io/images/blog_1_2.jpg" alt="Alt text" /></p>
+<p><img src="/images/blog_1_2.jpg" alt="Alt text" /></p>
 
 <p> &ldquo;焦距越小，接受的弥散斑就越小，景深就变大。&rdquo;</p></li>
 <li><p>光圈</p>
 
-<p><img src="http://wxdwfc.github.io/images/blog_1_3.jpg" alt="Alt text" /></p>
+<p><img src="/images/blog_1_3.jpg" alt="Alt text" /></p>
 
 <p>那既然有弥散斑，我用个挡板挡住弥散斑不就可以让照片景深变大吗？对的，这挡板就是光圈。</p>
 
@@ -56,15 +56,6 @@
 <p> &emsp;&emsp; 嘛，反正这些照片别人也不会当回事，朋友圈的照片几天就会忘了。正好给我当练习的素材。大概也没有人会关注这里:)</p></li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://wxdwfc.github.io/blog/2016/01/22/hello-world/"/>
-    <updated>2016-01-22T22:34:14+08:00</updated>
-    <id>http://wxdwfc.github.io/blog/2016/01/22/hello-world</id>
-    <content type="html"><![CDATA[<p>Hello!</p>
 ]]></content>
   </entry>
   
