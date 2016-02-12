@@ -224,7 +224,7 @@
 	    output('<p>');
 	    //		output('715 Broadway Room 719<br>');
 	    //		output('New York, NY 10003<br>');
-	    output('Contact: wxdwfc at sjtu edu cn<br>');
+	    output('Contact: wxdwfc at gmail com<br>');
 	    output('Github: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 	    output('</p>');
 
@@ -245,6 +245,13 @@
 	    output('<b>Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, Haibo Chen</b>');
 	    output('<br>');
 	    output('<b> In proceedings of the 25th ACM Symposium on Operating Systems Principles. Monterey, CA, October, 2015.</b>');
+	    output('<br>');
+	    output('<br>');
+	    output('<b>Fast and General Distributed Transactions Using RDMA and HTM</b>');
+	    output('<br>');
+	    output('<b>Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen</b>');
+	    output('<br>');	    
+	    output('<b> In proceedings of the 11th ACM European Conference on Computer Systems Principles.(To appear)</b>');	    
 	}
 
 	function welcome() {
