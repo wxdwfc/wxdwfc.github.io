@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://wxdwfc.github.io/sitemap.xml 
+Sitemap: http://xmm4ok69.com/sitemap.xml 
