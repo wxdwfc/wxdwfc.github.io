@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+  <!-- aha-->
+<head>
+  <meta charset="utf-8">
+  <title>Paper Reading Yesquel: Scalable SQL Storage for Web Applications - WXD's official site</title>
+  <meta name="author" content="Xmm">
+
+  
+  <meta name="description" content="Yesquel: scalable SQL storage for Web applications,Marcos K et al. 2015 &emsp;&emsp;现今传统的SQL数据库正在成为许多网络应用，比如邮件系统，社交网络的系统瓶颈。在论文里说到，这些系统使用两种方式来避免这种情况发生 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://xmm4ok69.com/blog/2016/02/14/paper-reading-yesquel-scalable-sql-storage-for-web-applications/">
+  <link href="/favicon.png" rel="icon">
+  <link rel="stylesheet" media="all" href="stylesheets/terminal-1.0.0.min.css">  
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="WXD's official site" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">WXD's official site</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="xmm4ok69.com">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>  
+  <li><a href="/list/">Blog</a></li>    
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Paper Reading Yesquel: Scalable SQL Storage for Web Applications</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-14T16:55:26+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>4:55 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Yesquel: scalable SQL storage for Web applications,Marcos K et al. 2015</h2>
+
+<p><br />
+&emsp;&emsp;现今传统的SQL数据库正在成为许多网络应用，比如邮件系统，社交网络的系统瓶颈。在论文里说到，这些系统使用两种方式来避免这种情况发生：</p>
+
+<ul style="padding-left:50px;"  >
+    <li><p>使用一个缓存层比如memcached来避免对于数据库的直接访问。</p></li>
+    <li><p>不使用传统数据库，而使用一个NOSQL的数据库来代替SQL的数据库。</p></li>
+</ul>
+
+
+
+
+<!-- more -->
+
+
+<p>&emsp;&emsp;然而，NOSQL相比传统的SQL数据库有许多问题，主要在于功能性的问题。，许多NOSQL的数据库提供不同的特性，如下图作者总结的；</p>
+
+<p>   <img src="/images/yes/fig1.png" alt="Alt text" /></p>
+
+<p>   相比来说，SQL的兼容性相对来说就好很多。</p>
+
+<p>   所以这篇论文的主要贡献在提出了一个SQL数据库的架构，为NOSQL的workload来优化。正如michael stonebraker的一篇paper所说的一样，类似SQL数据库的这种one size fits all的时代已经过去了，想要有更好的性能就要为一个workload来优化。</p>
+
+<p>   所以Yesquel针对的是web applications，如论文中表述,</p>
+
+<blockquote>
+Web applications have lots of data and users. Queries used to serve Web pages are small and numerous: each query touches a small amount of data, but because there are many simultaneous queries, in aggregate they access large amounts of data. Queries are latency-sensitive, as Web pages must display quickly.
+</blockquote>
+
+
+<p>&emsp;&emsp;ok基于这些背景知识可以来看这篇paper的关键点了。其实这还是一篇比较容易理解的paper。</p>
+
+<h3>Yesquel的架构及整体设计</h3>
+
+<p>&emsp;&emsp;Yesquel的架构主要由客户端的SQL解析器和一个分布式的数据引擎组成。Yesquel将SQL解析放在客户端而不是服务器端，也就是说所有的SQL query都由客户端解析成数据层的访问再由客户端向服务器端发起访问。这样带来的好处是服务器的SQL解析器不会成为性能的瓶颈，因为解析的性能随着client的增多会变得更好；这里我认为带来的trade-off是解析器没有办法获得全局的数据库信息，这样在做一些query的时候没有办法做最好的优化。不过在web app的情况下这应该不会成为很大的问题。具体的系统架构如下图所示，</p>
+
+<p>   <img src="/images/yes/fig1.png" alt="Alt text" /></p>
+
+<p>&emsp;&emsp;分布式的数据引擎需要支持数据的键值查找，以及对键的range query。同时数据引擎需要有非常好的扩展性和支持并发的请求，这些我认为都是比较具有挑战的，尤其是在一个分布式的环境中。</p>
+
+<blockquote>
+<ul>
+<li>Provide locality, so that neighboring keys are often in the
+same server, allowing them to be fetched together during
+enumeration.
+<li>Minimize the number of network round trips for locating
+keys.
+<li>Balance load by spreading keys across servers, even if the
+workload is non-uniform and changes over time. This requires
+continuous and adaptive rebalancing without pausing
+or disrupting other operations.
+<li>Provide reasonable semantics under concurrent operations.
+For example, while a client changes an ordered
+map, another client may be enumerating its keys, and the
+result should be sensible.
+<li>Provide good performance under concurrent operations.
+</blockquote>
+
+
+<p>&emsp;&emsp;作者也特别提到这样的设计对OLAP的workload不是特别友好。因为OLAP通常需要执行非常长的时间，同时需要访问非常多的数据。如果由客户端做join或者aggregation的话显然需要client自己做，这样client就需要访问非常多的数据。</p>
+
+<h3>Yesquel的分布式B树YDBT</h3>
+
+<p>&emsp;&emsp;Yesquel使用了一个Distributed balanced BTree来作为他的数据引擎的支持。关于这个B树其实没有什么特别的，我自己总结来说他有三个特点，</p>
+
+<ol style="padding-left:50px;"  >
+    <li><p>使用了一个back-down search算法使得对对B树的搜索在大部分情况下可以使用本地缓存。</p></li>
+    <li><p>使用了一个简单的事务型存储服务来储存树的节点，这样不需要对树进行额外的并发控制保护，可以直接利利用事务来做并发控制</p></li>
+    <li><p>使用了新的分裂算法，即将对于树的节点访问load也作为树节点的分裂依据。</p></li>
+</ol>
+
+
+<p>&emsp;&emsp;对于第一点来说，他主要的算法如下，</p>
+
+<p>   <img src="/images/yes/fig3.png" alt="Alt text" /></p>
+
+<p>&emsp;&emsp;这个算法假设树除了叶子节点外都可以cache到本地，因此大部分树的查找操作都可以不用网络读取远端节点，这样就会非常的高效。这个算法需要解决的问题是，他不去维护cache的consistency，因为这会有非常大的开销，所以由于cache的过期会使得算法一直重试下去。于是解决方法是设一个阈值(论文中是100)，当超过这个阈值的时候就invalidate cache，采用一个slow path来重新查找key(这篇论文是采用transaction来作slow path的查找)。</p>
+
+<p>&emsp;&emsp;这个算法我觉得有个非常有意思的点，就是他可以在尽可能的利用cache避免网络操作，这我认为在分布式环境下是个很大的开销。这感觉可以和RDMA frendly data structure结合在一起考虑，但是需要考虑如何做并发控制。</p>
+
+<p>&emsp;&emsp;其他的两点我觉得比较trivial，就不讨论了。</p>
+
+<p>&emsp;&emsp;最后我觉得他们的论文非常厉害的一点是他们的系统非常给人robost的感觉。他们的项目的官网是</p>
+
+<blockquote>
+<a href="http://www.yesquel.com/">http://www.yesquel.com/</a>
+</blockquote>
+
+
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Xmm</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-02-14T16:55:26+08:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>4:55 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/distributed-systems/'>distributed-systems</a>, <a class='category' href='/blog/categories/paper-reading/'>paper-reading</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+    
+    <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a href="http://www.jiathis.com/share?uid=2082282" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=2082282" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2082282"></script>
+<!-- UY END -->
+
+    
+    
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2016/01/24/xiang-ji-cheng-xiang-yuan-li/" title="Previous Post: 相机成像原理">&laquo; 相机成像原理</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/02/14/paper-reading-yesquel-scalable-sql-storage-for-web-applications/">Paper Reading Yesquel: Scalable SQL Storage for Web Applications</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/24/xiang-ji-cheng-xiang-yuan-li/">相机成像原理</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/22/hello-world/">Hello World</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - Xmm -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
