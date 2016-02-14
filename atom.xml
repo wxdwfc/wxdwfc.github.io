@@ -4,7 +4,7 @@
   <title><![CDATA[WXD's official site]]></title>
   <link href="http://xmm4ok69.com/atom.xml" rel="self"/>
   <link href="http://xmm4ok69.com/"/>
-  <updated>2016-02-14T20:36:01+08:00</updated>
+  <updated>2016-02-14T20:43:28+08:00</updated>
   <id>http://xmm4ok69.com/</id>
   <author>
     <name><![CDATA[Xmm]]></name>
@@ -38,11 +38,11 @@
 
 <p>   <img src="http://xmm4ok69.com/images/yes/fig1.png" alt="Alt text" /></p>
 
-<p>   相比来说，SQL的兼容性相对来说就好很多。</p>
+<p>&emsp;&emsp;相比来说，SQL的兼容性相对来说就好很多。</p>
 
-<p>   所以这篇论文的主要贡献在提出了一个SQL数据库的架构，为NOSQL的workload来优化。正如michael stonebraker的一篇paper所说的一样，类似SQL数据库的这种one size fits all的时代已经过去了，想要有更好的性能就要为一个workload来优化。</p>
+<p>&emsp;&emsp;所以这篇论文的主要贡献在提出了一个SQL数据库的架构，为NOSQL的workload来优化。正如michael stonebraker的一篇paper所说的一样，类似SQL数据库的这种one size fits all的时代已经过去了，想要有更好的性能就要为一个workload来优化。</p>
 
-<p>   所以Yesquel针对的是web applications，如论文中表述,</p>
+<p>&emsp;&emsp;所以Yesquel针对的是web applications，如论文中表述,</p>
 
 <blockquote>
 Web applications have lots of data and users. Queries used to serve Web pages are small and numerous: each query touches a small amount of data, but because there are many simultaneous queries, in aggregate they access large amounts of data. Queries are latency-sensitive, as Web pages must display quickly.
