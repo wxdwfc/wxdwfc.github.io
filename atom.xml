@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[XMM's home site]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2016-12-22T20:18:40+08:00</updated>
+  <id>http://yoursite.com/</id>
+  <author>
+    <name><![CDATA[XingDa Wei]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[2016]]></title>
+    <link href="http://yoursite.com/blog/2016/12/21/2016/"/>
+    <updated>2016-12-21T15:18:48+08:00</updated>
+    <id>http://yoursite.com/blog/2016/12/21/2016</id>
+    <content type="html"><![CDATA[<p>2016年对于我来说，是在寻找与打磨自我中度过。
+其中尤其是在下半年，我觉得我获得的最大的改变就是，至少在很多方面，我比以往要果断了许多。 逐渐抛弃了犹豫的自我，在今后，我想要获得的东西，希望也可以全部拿到。</p>
+
+<h2>Best moments of my 2016</h2>
+
+<p><img src="http://yoursite.com/images/2016/best_2016_.jpg" alt="" /></p>
+
+<p>最后，比起成为一个坚强的人，也要成为一个温柔的人呢。</p>
+]]></content>
+  </entry>
+  
+</feed>
