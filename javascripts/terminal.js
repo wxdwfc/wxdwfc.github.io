@@ -228,7 +228,7 @@
 	    output('Github: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 	    output('</p>');
 
-	    output('<p>I\'m current a p.h.d candidate\'s candidate student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>.I\'m working in distributed system group,which is advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.</p><br/> This terminal is powered by <a href="https://github.com/SDA/terminal/blob/master/README.md">Termina.js</a></p>');
+	    output('<p>I\'m current a p.h.d candidate\'s candidate student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>.I\'m working in distributed system group,which is advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.</p><br/> This lovely terminal is powered by <a href="https://github.com/SDA/terminal/blob/master/README.md">Termina.js</a></p>');
 	    output('<p> I\'m a music lover!:)</p>');
 	    //		output('<p>This lovely terminal emulator is from Eric Bidelman &lt;ericbidelman@chromium.org&gt; </p>');
 	}
