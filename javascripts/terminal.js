@@ -13,8 +13,8 @@
 	    'clear':"Clear the content of this terminal.",
 	    "bubble":"A re-make classic frozen bubble game."
 	};
-	
-	
+
+
 	var defaults = {
 	    welcome: '',
 	    prompt: '',
@@ -63,7 +63,7 @@
 
 	//		if (options.welcome) {
 	//			output(options.welcome);
-	
+
 	//		}
 	welcome();
 	window.addEventListener('click', function(e) {
@@ -200,7 +200,7 @@
 	    case 'pub':
 		pub();
 		break;
-	    default:			
+	    default:
 		if (cmd) {
 		    output(cmd + ': command not found');
 		}
@@ -234,7 +234,7 @@
 	}
 	function bubble() {
 	    window.open('http://wxdwfc.github.io/github_page/frozen_bubble/main.html');
-	    output("<p> The game is started ! Be sure to use an HTML5 supported browser!</p>");		
+	    output("<p> The game is started ! Be sure to use an HTML5 supported browser!</p>");
 	}
 
 	function pub() {
@@ -250,8 +250,16 @@
 	    output('<b>Fast and General Distributed Transactions Using RDMA and HTM</b>');
 	    output('<br>');
 	    output('<b>Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen</b>');
-	    output('<br>');	    
-	    output('<b> In proceedings of the 11th ACM European Conference on Computer Systems Principles.</b>');	    
+	    output('<br>');
+	    output('<b> In proceedings of the 11th ACM European Conference on Computer Systems Principles.</b>');
+
+		output('<br>');
+	    output('<br>');
+		output('<b>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</b>');
+	    output('<br>');
+	    output('<b>Xingda Wei,Sijie Shen, Rong Chen, Haibo Chen</b>');
+	    output('<br>');
+	    output('<b> The 2017 USENIX Annual Technical Conference, SANTA CLARA,CA,USA,July,2017</b>');
 	}
 
 	function welcome() {
@@ -262,14 +270,14 @@
 	    about();
 	    output('<p>Please type "help" for available commands.</p>');
 	}
-	
+
 	function clear() {
 	    _output.innerHTML = '';
 	    _cmdLine.value = '';
 	    _background.style.minHeight = '';
-	    welcome();	
+	    welcome();
 	}
-	
+
 	function output(html) {
 	    _output.insertAdjacentHTML('beforeEnd', html);
 	    _cmdLine.scrollIntoView();
