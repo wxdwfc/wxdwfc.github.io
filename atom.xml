@@ -4,7 +4,7 @@
   <title><![CDATA[XMM's home site]]></title>
   <link href="http://wxdwfc.github.io/atom.xml" rel="self"/>
   <link href="http://wxdwfc.github.io/"/>
-  <updated>2017-09-21T18:39:24+08:00</updated>
+  <updated>2017-09-22T10:37:51+08:00</updated>
   <id>http://wxdwfc.github.io/</id>
   <author>
     <name><![CDATA[XingDa Wei]]></name>
@@ -18,17 +18,7 @@
     <link href="http://wxdwfc.github.io/blog/2017/09/16/hun-ning-cao-yin-le-jie/"/>
     <updated>2017-09-16T18:13:58+08:00</updated>
     <id>http://wxdwfc.github.io/blog/2017/09/16/hun-ning-cao-yin-le-jie</id>
-    <content type="html"><![CDATA[<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;div id="wrapperHeader"&gt;
-</span><span class='line'> &lt;div id="header"&gt;
-</span><span class='line'>  &lt;img src="http://wxdwfc.github.io/images/cg_festival" alt="logo" /&gt;
-</span><span class='line'> &lt;/div&gt; 
-</span><span class='line'>&lt;/div&gt;</span></code></pre></td></tr></table></div></figure>
-
+    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
