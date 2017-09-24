@@ -9,8 +9,7 @@
   <meta name="author" content="XingDa Wei">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="#The begining 九月中，夏天就要（还是已经？）结束了。如果说夏天必须有什么的话，音乐节是必不可少的。 没看过几场live，没去过几场音乐节的我，却非常期待这种活动。Live和CD的音乐截然不同，在live中演奏者与观众的互动往往会增加许多奇妙的元素。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -106,9 +105,20 @@
   </header>
 
 
-  <div class="entry-content">
+  <div class="entry-content"><h4>#The begining</h4>
+
+<p>九月中，夏天就要（还是已经？）结束了。如果说夏天必须有什么的话，音乐节是必不可少的。</p>
+
+<p>没看过几场live，没去过几场音乐节的我，却非常期待这种活动。Live和CD的音乐截然不同，在live中演奏者与观众的互动往往会增加许多奇妙的元素。</p>
+
+<p>这次混凝草音乐节在浦东的上海瑞可碧橄榄球运动俱乐部举行。十一点半开场，我和瑞丰下午出发，快三点的时候到达了现场。</p>
+
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2017/09/16/hun-ning-cao-yin-le-jie/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -150,304 +160,12 @@
 
 <p>Question3: VM is not the best way to deploy software.</p>
 
-<hr />
-
-<h2>Track 1 Kernel</h2>
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/li-yiwen">Lock-in-Pop: Securing Privileged Operating System Kernels by Keeping on the Beaten Path</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://engineering.nyu.edu/people/justin-cappos">Justin Cappos</a>, <strong>NYU</strong>, <strong>Security &amp; system</strong>,</p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/lawall">Fast and Precise Retrieval of Forward and Back Porting Information for Linux Device Drivers</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://www-public.tem-tsp.eu/~thomas_g/">Gilles Muller</a></p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/amit">Optimizing the TLB Shootdown Algorithm with Page Access Tracking</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://www.cs.technion.ac.il/people/namit/">Nadav Amit</a> <strong>VMWare</strong>, <strong>Virtual CPU validation</strong>(SOSP'15)</p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/kumar">Falcon: Scaling IO Performance in Multi-SSD Volumes</a></strong></p>
-
-<p><strong>Author</strong>: <a href="https://www.seas.gwu.edu/howie-huang">Howie Huang</a></p>
-
-<hr />
-
-<hr />
-
-<h2>Track 2 Data centers</h2>
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/peng">deTector: a Topology-aware Monitoring System for Data Center Networks</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://nskeylab.xjtu.edu.cn/people/cchu/publications/">Chengchen H</a></p>
-
-<p>Detecting failures in datacenter networks.</p>
-
-<ul>
-<li>Clean failures: server down</li>
-<li>Gray failures: not reported by the devices</li>
-</ul>
-
-
-<p>Existing solutions:</p>
-
-<ul>
-<li><p>Misses one failure.</p></li>
-<li><p>High overhead</p></li>
-</ul>
-
-
-<p><strong>This paper:</strong> an algorithms to find the down server, with small compoments.(Pinnger)</p>
-
-<p>Routing matrix: 0,1 matrix,
-How to find the which link is down? (If one path is down)</p>
-
-<p><strong>Question</strong>:</p>
-
-<ul>
-<li>How many pinger to use? 2,3 in each rack.How do you cover the whole network?</li>
-<li>What is the difference between your work and other work? Main difference is the prob matrix, they send prob without any plan.</li>
-<li>In real, it is hard to generate the accurate matrix. How to guarantee it is correct?</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/guo-jian">Pricing Intra-Datacenter Networks with Over-Committed Bandwidth Guarantee</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://www.cse.cuhk.edu.hk/~cslui/resume.html">John C.S. Lui</a> , 2 paper accepted this year&rsquo;s ATC.</p>
-
-<p>Network performance is hard to to pricing.</p>
-
-<p>Bandwidth is not stable for VM.</p>
-
-<p>SDN based implementation.</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>How practical is the work? Aussming non-blocking switch.</li>
-<li>Deployment of such system. 1. Preventng user from gaming the systm.(No decreasing function) 2. How to prevent DoS attacks(Do not consider).</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/gunawardhana">Unobtrusive Deferred Update Stabilization for Efficient Geo-Replication</a></strong></p>
-
-<p><strong>Author</strong>: <a href="http://www.gsd.inesc-id.pt/~ler/">Luis Rodrigues</a></p>
-
-<p>More meta data, less precises in causality tracking. So needs a way to compress the meta-data.</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>FIFO link on differnt datacenter network? Does&rsquo;t means that u have to use a single TCP connection.</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/iorgulescu">Don&rsquo;t cry over spilled records: Memory elasticity of data-parallel applications and its application to cluster scheduling</a></strong></p>
-
-<p><strong>Author</strong>: <a href="https://people.epfl.ch/willy.zwaenepoel">Willy Zwaenepoel</a></p>
-
-<p>Maximize the performance of data-parallel application while providing best memory utilization.
-Lookig at cluster&rsquo;s memory, usually cluster&rsquo;s memory is <strong>under-utilized</strong></p>
-
-<p>Run hadoop with less memory, performance not much efficient:</p>
-
-<p><strong>Reasons</strong>:</p>
-
-<ul>
-<li>Sequential disk access</li>
-<li>Additional IO does not cause disk contention.</li>
-</ul>
-
-
-<hr />
-
-<h2>Track 1 Storage (So many erasure coding&hellip;)##</h2>
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/chen-yu-lin">Giza: Erasure Coding Objects across Global Data Centers</a></strong></p>
-
-<p>Microsoft 40 datacenter range globally, 14 in US
-=> Reduce datacenter storage costs</p>
-
-<p>When erasuring code wins? coding friendly workloads
-170TBs link. (海底光缆)</p>
-
-<p>OneDrive is occupied mostly by large objects.(>=1GBs) => erasure code large objects
-Cache objects at one DC. => reduce re-construction</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>Masterless paxos, what about concurrent put?  The concurrent puts are not very frequently.</li>
-<li>Implemented as a client library?  Yes.</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/sun">SmartCuckoo: A Fast and Cost-Efficient Hashing Index Scheme for Cloud Storage Systems</a></strong></p>
-
-<p>I was left wandering is there a lot insert-intensive workloads?</p>
-
-<p>Question:
-1. What is the bound if insert performance of smartcuckoo hashing?
-2. The memory overhead for the extra structures?</p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/li-runhui">Repair Pipelining for Erasure-Coded Storage</a></strong></p>
-
-<p>Push the repair performance of erasure-coding to limit.</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>What about multiple failure? Focused on 1 block failure (common case)</li>
-<li>In term of performance, what is the intuation that is much better than the baseline?</li>
-<li>Why the method don&rsquo;t work for multiple failures?</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/li-huiba">PARIX: Speculative Partial Writes in Erasure-Coded Systems</a></strong></p>
-
-<p>Overhead to small writes.</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>SSD PCM?</li>
-</ul>
-
-
-<hr />
-
-<h2>Track 2, Don&rsquo;t forget the memory</h2>
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/hu">Log-Structured Non-Volatile Main Memory</a></strong></p>
-
-<p>A client library for using Non-volatile memory.
-Fragementation is not very serious for <strong>main memory</strong>, but it&rsquo;s critical to <strong>NVM</strong>.
-<strong>Wear out</strong> of NVM.</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>//not very important.</li>
-<li>How can we actually recovery the address mapping table. (Scan the log and re-construct the address)</li>
-<li>The maxium size of the address mapping table. (&lt; 20% of the actual data)</li>
-<li>How do u post atomically do meta data and data changes? (Checksum to protect this)</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="">Soft updates make fast and simple</a></strong></p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>In disk-based file systems, soft updates, what if some other file system delay the operation?</li>
-<li>It does&rsquo;t gaurantee the consistency of user data, only meta-data. What is the cost?</li>
-<li>Do u have interfaces like mmap?</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/guo-fan">SmartMD: A High Performance Deduplication Engine with Mixed Pages</a></strong></p>
-
-<p>Take the benefits of both large pages and small pages.</p>
-
-<p>Question:
-1. What is the level of committment for the blocks?
-2. U mention about the overhead of monitoring, what is the overhead of splitting,re-constructing or something else?
-   Splitting is small, re-constructing is large.
-3. The behvior of TLB?
-4. // i donot understand this.</p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/wang">Elastic Memory Management for Cloud Data Analytics</a></strong></p>
-
-<p>Data analytics is <strong>memory heavy</strong>.</p>
-
-<p>Container based.</p>
-
-<p>This work: make container memory dynamic.</p>
-
-<p><strong>Questions:</strong></p>
-
-<ul>
-<li>Comparing to JVM&rsquo;s default setting? (Min->Max)</li>
-<li>If the pause is too long, the distributed setting may think the node is dead. How do u handle this?</li>
-<li>The ciritical part of the work is the model to predict, what about the development of the model?</li>
-<li>//</li>
-</ul>
-
-
-<hr />
-
-<h2>File Systems</h2>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/hahn">Improving File System Performance of Mobile Storage Systems Using a Decoupled Defragmenter</a></strong></p>
-
-<p>File fragmentation causes smart phone&rsquo;s performance decrease.</p>
-
-<p>De-fragmentation requires the copying -> reduce flash&rsquo;s lifetime.</p>
-
-<p>// trade-off: file system block abstraction is the performance penality? (long fight)</p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>Logical blocks considered harmful? It seems that this abstraction makes the problem.</li>
-<li>How can get this? (At Android smart phone)</li>
-<li>Why choose Android environment? Because this impacts the user&rsquo;s experience.</li>
-<li>Why not use simple solution?</li>
-<li>Write overhead for the logical remapping?</li>
-<li>Can implement on SSD.</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/lu">Octopus: an RDMA-enabled Distributed Persistent Memory File System</a></strong></p>
-
-<p><strong>Question:</strong></p>
-
-<ul>
-<li>One-sided RDMA for data transfer, reliable connection, QP scalability? (12 nodes, no problem)</li>
-<li>How the client know the address of the RPC?</li>
-</ul>
-
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/park">iJournaling: Fine-Grained Journaling for Improving the Latency of Fsync System Call</a></strong></p>
-
-<p>MySQL-tpcc, 140 fsync called / second</p>
-
-<hr />
-
-<p><strong><a href="https://www.usenix.org/conference/atc17/technical-sessions/presentation/misra">Scaling Distributed File Systems in Resource-Harvesting Datacenters</a></strong></p>
-
-<p>Distributed file system cannot scale to the entire datacenter.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2017/07/10/atc-17/">Read on &rarr;</a>
+    </footer>
   
 
 
