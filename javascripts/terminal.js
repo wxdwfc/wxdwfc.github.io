@@ -11,7 +11,8 @@
 	    'about':"My person introduction.",
 	    'pub'  :"My publications.",
 	    'clear':"Clear the content of this terminal.",
-	    "bubble":"A re-make classic frozen bubble game."
+	    "bubble":"A re-make classic frozen bubble game.",
+		"blog": "Lists of my blogs."
 	};
 
 
@@ -199,7 +200,9 @@
 		break;
 	    case 'pub':
 		pub();
-		break;
+			break;
+		case 'blog':
+			blogs();
 	    default:
 		if (cmd) {
 		    output(cmd + ': command not found');
@@ -238,6 +241,10 @@
 	    window.open('http://wxdwfc.github.io/github_page/frozen_bubble/main.html');
 	    output("<p> The game is started ! Be sure to use an HTML5 supported browser!</p>");
 	}
+
+		function blogs() {
+			window.open('http://xmm4ok69.com/blogs/');
+		}
 
 	function pub() {
 	    output('<h2>Publications</h2>');
