@@ -226,13 +226,13 @@
 		function about() {
 
 			output('<div class="not-align yue">');
-			output('<strong style="font-size:1.36em" >魏星达 XingDa Wei</strong><br/>');
+			output('<h3 class="header_title">魏星达 XingDa Wei</h3>');
 			//		output('715 Broadway Room 719<br>');
 			//		output('New York, NY 10003<br>');
-			output('<code>Contact</code>: wxdwfc at gmail com<br>');
-			output('<code>Github</code>: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
+			output('Contact: wxdwfc at gmail com<br>');
+			output('Github: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 
-			output('I\'m currently a p.h.d candidate\'s candidate student @<a href="http://ipads.se.sjtu.edu.cn" target="_blank">IPADS</a>.<br />I\'m working in distributed system group  advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/> This lovely terminal is powered by <a href="https://github.com/SDA/terminal/blob/master/README.md">Termina.js</a><br />');
+			output('I\'m current a p.h.d candidate\'s candidate student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>.I\'m working in distributed system group,which is advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/> This lovely terminal is powered by <a href="https://github.com/SDA/terminal/blob/master/README.md">Termina.js</a><br />');
 			output('I\'m a music lover!:)');
 			output('</ div">');
 	    //		output('<p>This lovely terminal emulator is from Eric Bidelman &lt;ericbidelman@chromium.org&gt; </p>');
@@ -277,7 +277,7 @@
 		   '</div>');
 	    output((new Date()).toLocaleString());
 	    about();
-	    output('<br />Please type "<strong>help</strong>" for available commands.');
+	    output('<br />Please type "help" for available commands.');
 	}
 
 	function clear() {

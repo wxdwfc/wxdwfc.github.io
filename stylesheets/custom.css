@@ -1,0 +1,52 @@
+div#wrapperHeader {
+    width:100%; !important;
+    height:100%; !important;
+    background-image:url(https://farm5.staticflickr.com/4498/37274337196_14d27b46fb_k.jpg) ;
+    background-size:100% 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.header {
+    height: 31vw;
+    width:100vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body{
+    margin: 0;
+}
+
+body > p{
+    margin: 0 auto !important;
+    max-width: 760px !important;
+}
+
+.entry-title1 {
+    margin: 0 auto !important;
+    max-width: 800px;
+}
+
+.center_cus {
+    width: 80vw;
+    margin-left: 9vw;
+}
+
+.center_left {
+    margin-left: -2vw;
+}
+
+.photo {
+    width:70vw; !important
+}
+.yue figcaption {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0,0,0,.42);
+}
