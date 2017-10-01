@@ -47,9 +47,12 @@
 <body   class="collapse-sidebar sidebar-footer" >
   <header role="banner" class="header">
     <div id="wrapperHeader1" class="yue">
-  <a  style="color:hsla(0,0%,100%,.98)"> "以1页（page）而生的少年,
-    也写有比谁都闪耀的1行,
-    我是如此相信"      - ’I’ Novel</a>
+  <div style="padding-top:5em">
+    <a href="/" style="color:hsla(0,0%,100%,.98); font-size:22px;font-weight:720;"> "以1页（page）而生的少年,
+      也写有比谁都闪耀的1行,
+      我是如此相信" <br /> <!-- &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-->
+      - ’I’ Novel</a>
+  </div>
 </div>
 <style media="screen" type="text/css">
 div#wrapperHeader1 {
@@ -73,11 +76,16 @@ margin: 0;
 }
 body > p{
 margin: 0 auto !important;
-max-width: 640px !important;
+max-width: 760px;
 }
 .center_cus {
-width: 64vw;
-margin-left: 15vw;
+width: 60vw;
+margin-left: 19vw;
+}
+
+.center_cus1 {
+width: 60vw;
+margin-left: 17vw;
 }
 .header_title{
 margin:0 !important;
@@ -110,12 +118,12 @@ margin:0 !important;
 </ul>
 
 </nav>
-  <div id="main" class="yue center_cus">
+  <div id="main1" class="yue center_cus">
     <div id="content">
       <div >
   
   <script src="javascripts/terminal.js"></script>
-  <div id ="terminal" class="blog-index center_cus"></div>
+  <div id ="terminal" class="blog-index"></div>
   <script>
     var terminal = new Terminal('terminal', {prompt: '', separator: '&gt;'}, {});
     terminal.setTheme('white');
