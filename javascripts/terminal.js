@@ -218,7 +218,7 @@
 	    var s = ""
 	    for(var k in CMDS_ ) {
 			//s += '<p>' + k + ':  ' +  CMDS_[k] + '</p>'
-			s +=  (k + ':  ' + CMDS_[k] + '<br />');
+			s +=  ("<code>" + k + "</code>" + ':  ' + CMDS_[k] + '<br />');
 	    }
 	    output(s)
 	}
