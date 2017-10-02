@@ -232,7 +232,7 @@
 			output('<code>Contact</code>: wxdwfc at gmail com<br />');
 			output('<code>Github</code>: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 
-			output('I\'m current a <code>p.h.d</code> student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>, SJTU.I\'m in the distributed system group advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/>');
+			output('I\'m current a <code>p.h.d</code> student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>,SJTU.<br/>I\'m in the distributed system group advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/>');
 			output('I\'m a music lover!:)');
 			output('</ div">');
 	    //		output('<p>This lovely terminal emulator is from Eric Bidelman &lt;ericbidelman@chromium.org&gt; </p>');
