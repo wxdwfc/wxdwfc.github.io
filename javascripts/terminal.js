@@ -249,26 +249,26 @@
 	function pub() {
 	    output('<h2>Publications</h2>');
 	    output('<p>');
-	    output('<b>Fast In-memory Transaction Processing using RDMA and HTM</b>');
+	    output('<u>Fast In-memory Transaction Processing using RDMA and HTM</u>');
 	    output('<br>');
-	    output('<b>Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, Haibo Chen</b>');
+	    output('Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, Haibo Chen');
 	    output('<br>');
-	    output('<b> In proceedings of the 25th ACM Symposium on Operating Systems Principles. Monterey, CA, October, 2015.</b>');
+	    output('In proceedings of the 25th ACM Symposium on Operating Systems Principles. Monterey, CA, October, 2015.');
 	    output('<br>');
 	    output('<br>');
-	    output('<b>Fast and General Distributed Transactions Using RDMA and HTM</b>');
+	    output('<u>Fast and General Distributed Transactions Using RDMA and HTM</u>');
 	    output('<br>');
-	    output('<b>Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen</b>');
+	    output('Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen');
 	    output('<br>');
-	    output('<b> In proceedings of the 11th ACM European Conference on Computer Systems Principles.</b>');
+	    output('In proceedings of the 11th ACM European Conference on Computer Systems Principles.');
 
 		output('<br>');
 	    output('<br>');
-		output('<b>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</b>');
+		output('<u>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</u>');
 	    output('<br>');
-	    output('<b>Xingda Wei,Sijie Shen, Rong Chen, Haibo Chen</b>');
+	    output('Xingda Wei,Sijie Shen, Rong Chen, Haibo Chen');
 	    output('<br>');
-	    output('<b> The 2017 USENIX Annual Technical Conference, SANTA CLARA,CA,USA,July,2017</b>');
+	    output('The 2017 USENIX Annual Technical Conference, SANTA CLARA,CA,USA,July,2017');
 	}
 
 	function welcome() {
