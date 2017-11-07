@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://wxdwfc.github.io/blog/2017/10/28/ai-system-at-sosp-17/</loc>
+<lastmod>2017-10-28T08:35:37+08:00</lastmod>
+</url>
+<url>
+<loc>http://wxdwfc.github.io/blog/2017/10/15/mo-sheng-jie-ye-you/</loc>
+<lastmod>2017-10-15T10:08:59+08:00</lastmod>
+</url>
+<url>
 <loc>http://wxdwfc.github.io/blog/2017/09/17/hun-ning-cao-yin-le-jie/</loc>
 <lastmod>2017-09-17T18:13:58+08:00</lastmod>
 </url>

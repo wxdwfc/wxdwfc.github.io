@@ -4,7 +4,7 @@
   <title><![CDATA[Stay simple, stay hungry.]]></title>
   <link href="http://wxdwfc.github.io/atom.xml" rel="self"/>
   <link href="http://wxdwfc.github.io/"/>
-  <updated>2017-10-12T15:42:34+08:00</updated>
+  <updated>2017-11-05T08:39:04+08:00</updated>
   <id>http://wxdwfc.github.io/</id>
   <author>
     <name><![CDATA[XingDa Wei]]></name>
@@ -12,6 +12,134 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[AI X system@SOSP'17]]></title>
+    <link href="http://wxdwfc.github.io/blog/2017/10/28/ai-system-at-sosp-17/"/>
+    <updated>2017-10-28T08:35:37+08:00</updated>
+    <id>http://wxdwfc.github.io/blog/2017/10/28/ai-system-at-sosp-17</id>
+    <content type="html"><![CDATA[<h4>Opening</h4>
+
+<p><strong>System and algorithm co-design for distributed machine learning</strong></p>
+
+<p>Implementing  a ML algorighms is not easy. (Many stacks)</p>
+
+<p>Models size > GB</p>
+
+<p>More machine -> better throughput</p>
+
+<p>​                           -> Number of iterations increases (How to distributed)</p>
+
+<!--More-->
+
+
+<p><strong>当代的machine learning系统的构建</strong> -> <strong>未来的machine learning系统的构建</strong></p>
+
+<p><img src="https://farm5.staticflickr.com/4545/38101574596_60d0a3334a_k.jpg" width="540px" /></p>
+
+<p>How to build ML program to parallel?</p>
+
+<ul>
+<li>Difference between ML program and classic program</li>
+<li>Error tolerance -> Fix error in the next iteration</li>
+<li>Asymetric convergence</li>
+</ul>
+
+
+<p>How to distribute? - Chopping: model dependency</p>
+
+<p><em>More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server</em></p>
+
+<p>What to communicate?</p>
+
+<ul>
+<li>communicate partial results (Still convergency guarantees(WoW)) Hybrid updates</li>
+</ul>
+
+
+<p>现在的machine learning framework：</p>
+
+<hr />
+
+<p>Faster isn&rsquo;t always better</p>
+
+<p>Program optimization:</p>
+
+<ul>
+<li>JIT</li>
+<li>Ahead of time compilation</li>
+<li>Whole program optimization (good for TPUs)</li>
+</ul>
+
+
+<p><strong>TPU v2</strong></p>
+
+<p>比较让人惊讶的是TPU v2的发展。现在TPU已经可以互相不通过host(服务器)来进行交互以及通信。很像在RDMA网卡上使用FPGA来加速某些计算。 -> networked together</p>
+
+<p><img src="https://farm5.staticflickr.com/4510/24304553668_42ab0b05a9_k.jpg" width="720px" /></p>
+
+<p><strong>减少精度</strong></p>
+
+<p><img src="https://farm5.staticflickr.com/4548/38101573246_180a0879a8_k.jpg" width="360px" /></p>
+
+<p>在很多时候，机器学习的计算不需要很多的高精度的计算。适当丢失些计算可以加速处理，提高晶体管利用率。</p>
+
+<p>Using reenforicment learning  to improve system performance, i.e. device placement</p>
+
+<hr />
+
+<p><strong>TVM End to end IR stack for deep learning systems</strong></p>
+
+<p>IR: intermediate representation</p>
+
+<hr />
+
+<p>ChainerMM</p>
+
+<p><a href="https://github.com/chainer/chainermn">https://github.com/chainer/chainermn</a></p>
+
+<p>&ldquo;Why are u using 1000 GPUs ?(What&rsquo;s network is so complex?)&rdquo;</p>
+
+<ul>
+<li>&ldquo;Because our CEO is crazy.&rdquo;</li>
+</ul>
+
+
+<hr />
+
+<p>Services of ML</p>
+
+<p><a href="http://mwtds.azurewebsites.net/">http://mwtds.azurewebsites.net/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[万圣节夜游]]></title>
+    <link href="http://wxdwfc.github.io/blog/2017/10/15/mo-sheng-jie-ye-you/"/>
+    <updated>2017-10-15T10:08:59+08:00</updated>
+    <id>http://wxdwfc.github.io/blog/2017/10/15/mo-sheng-jie-ye-you</id>
+    <content type="html"><![CDATA[<p><strong>上海的欢乐谷</strong></p>
+
+<p>虽然今天不是万圣节，但是欢乐谷的鬼屋已经开放了。</p>
+
+<!--More-->
+
+
+<p>我们去的这天貌似是第一天的开放？</p>
+
+<p>进去的时候门口有一大堆人在直播的感觉。可惜我不敢凑过去拍照233。</p>
+
+<p>这是我第一次去鬼屋，不过感觉玩的非常开心。</p>
+
+<p>虽然鬼很假，不过我很久没有和那么多小伙伴一起玩耍了。气氛还是非常棒的。</p>
+
+<p><img src="https://farm5.staticflickr.com/4555/37464237794_d72bf1ab72_k.jpg" width="720px" /></p>
+
+<p>啊太多时间都在玩了，晚上拍出的照片基本上都糊了TT。就随便写点吧。</p>
+
+<p>令我印象比较深刻的是，在我们排队拍合照的时候，后边的路人都自发的用手机给我们打光。真的非常感谢他们。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[混凝草音乐节小记]]></title>
