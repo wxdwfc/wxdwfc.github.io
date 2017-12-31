@@ -4,7 +4,7 @@
   <title><![CDATA[Stay simple, stay hungry.]]></title>
   <link href="http://wxdwfc.github.io/atom.xml" rel="self"/>
   <link href="http://wxdwfc.github.io/"/>
-  <updated>2017-11-05T08:39:04+08:00</updated>
+  <updated>2017-12-31T16:05:22+08:00</updated>
   <id>http://wxdwfc.github.io/</id>
   <author>
     <name><![CDATA[XingDa Wei]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My 2017]]></title>
+    <link href="http://wxdwfc.github.io/blog/2017/12/29/my-2017/"/>
+    <updated>2017-12-29T09:55:34+08:00</updated>
+    <id>http://wxdwfc.github.io/blog/2017/12/29/my-2017</id>
+    <content type="html"><![CDATA[<p>2017 就这么过去啦～</p>
+
+<!--More-->
+
+
+<p><img src="https://farm5.staticflickr.com/4688/38523562135_61bf17def9_z.jpg" width="720px" /></p>
+
+<p><img src="https://farm5.staticflickr.com/4596/39401713901_2cb55a7178_z.jpg" width="720px" /></p>
+
+<p><img src="https://farm5.staticflickr.com/4643/25532338598_6d51af3a5c_k.jpg" width="720px" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[AI X system@SOSP'17]]></title>

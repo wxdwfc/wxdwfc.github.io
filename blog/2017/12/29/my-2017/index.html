@@ -6,11 +6,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>AI X system@SOSP'17 - Stay simple, stay hungry.</title>
+  <title>My 2017 - Stay simple, stay hungry.</title>
   <meta name="author" content="XingDa Wei">
 
   
-  <meta name="description" content="AI X system@SOSP'17 Oct 28th, 2017 8:35 am Opening System and algorithm co-design for distributed machine learning Implementing a ML algorighms is &hellip;">
+  <meta name="description" content="My 2017 Dec 29th, 2017 9:55 am 2017 就这么过去啦～ Please enable JavaScript to view the comments powered by Disqus. Authored by XingDa Wei Dec 29th, 2017 9 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wxdwfc.github.io/blog/2017/10/28/ai-system-at-sosp-17">
+  <link rel="canonical" href="http://wxdwfc.github.io/blog/2017/12/29/my-2017">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/yue.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -137,7 +137,7 @@ margin:0 !important;
 
 <header>
       
-          <h1 class="entry-title1">AI X system@SOSP'17</h1>
+          <h1 class="entry-title1">My 2017</h1>
       
       
     
@@ -147,7 +147,7 @@ margin:0 !important;
 
 
 
-<time class='entry-date' datetime='2017-10-28T08:35:37+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>8:35 am</span></time>
+<time class='entry-date' datetime='2017-12-29T09:55:34+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>9:55 am</span></time>
         
         
       </p>
@@ -155,98 +155,16 @@ margin:0 !important;
   </header>
 
 
-  <div class="entry-content"><h4>Opening</h4>
-
-<p><strong>System and algorithm co-design for distributed machine learning</strong></p>
-
-<p>Implementing  a ML algorighms is not easy. (Many stacks)</p>
-
-<p>Models size > GB</p>
-
-<p>More machine -> better throughput</p>
-
-<p>​                           -> Number of iterations increases (How to distributed)</p>
+  <div class="entry-content"><p>2017 就这么过去啦～</p>
 
 <!--More-->
 
 
-<p><strong>当代的machine learning系统的构建</strong> -> <strong>未来的machine learning系统的构建</strong></p>
+<p><img src="https://farm5.staticflickr.com/4688/38523562135_61bf17def9_z.jpg" width="720px" /></p>
 
-<p><img src="https://farm5.staticflickr.com/4545/38101574596_60d0a3334a_k.jpg" width="540px" /></p>
+<p><img src="https://farm5.staticflickr.com/4596/39401713901_2cb55a7178_z.jpg" width="720px" /></p>
 
-<p>How to build ML program to parallel?</p>
-
-<ul>
-<li>Difference between ML program and classic program</li>
-<li>Error tolerance -> Fix error in the next iteration</li>
-<li>Asymetric convergence</li>
-</ul>
-
-
-<p>How to distribute? - Chopping: model dependency</p>
-
-<p><em>More Effective Distributed ML via a Stale Synchronous Parallel Parameter Server</em></p>
-
-<p>What to communicate?</p>
-
-<ul>
-<li>communicate partial results (Still convergency guarantees(WoW)) Hybrid updates</li>
-</ul>
-
-
-<p>现在的machine learning framework：</p>
-
-<hr />
-
-<p>Faster isn&rsquo;t always better</p>
-
-<p>Program optimization:</p>
-
-<ul>
-<li>JIT</li>
-<li>Ahead of time compilation</li>
-<li>Whole program optimization (good for TPUs)</li>
-</ul>
-
-
-<p><strong>TPU v2</strong></p>
-
-<p>比较让人惊讶的是TPU v2的发展。现在TPU已经可以互相不通过host(服务器)来进行交互以及通信。很像在RDMA网卡上使用FPGA来加速某些计算。 -> networked together</p>
-
-<p><img src="https://farm5.staticflickr.com/4510/24304553668_42ab0b05a9_k.jpg" width="720px" /></p>
-
-<p><strong>减少精度</strong></p>
-
-<p><img src="https://farm5.staticflickr.com/4548/38101573246_180a0879a8_k.jpg" width="360px" /></p>
-
-<p>在很多时候，机器学习的计算不需要很多的高精度的计算。适当丢失些计算可以加速处理，提高晶体管利用率。</p>
-
-<p>Using reenforicment learning  to improve system performance, i.e. device placement</p>
-
-<hr />
-
-<p><strong>TVM End to end IR stack for deep learning systems</strong></p>
-
-<p>IR: intermediate representation</p>
-
-<hr />
-
-<p>ChainerMM</p>
-
-<p><a href="https://github.com/chainer/chainermn">https://github.com/chainer/chainermn</a></p>
-
-<p>&ldquo;Why are u using 1000 GPUs ?(What&rsquo;s network is so complex?)&rdquo;</p>
-
-<ul>
-<li>&ldquo;Because our CEO is crazy.&rdquo;</li>
-</ul>
-
-
-<hr />
-
-<p>Services of ML</p>
-
-<p><a href="http://mwtds.azurewebsites.net/">http://mwtds.azurewebsites.net/</a></p>
+<p><img src="https://farm5.staticflickr.com/4643/25532338598_6d51af3a5c_k.jpg" width="720px" /></p>
 </div>
   
   <div id="disqus_thread"></div>
@@ -293,7 +211,7 @@ s.setAttribute('data-timestamp', +new Date());
 
 
 
-<time class='entry-date' datetime='2017-10-28T08:35:37+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>8:35 am</span></time>
+<time class='entry-date' datetime='2017-12-29T09:55:34+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2017</span></span> <span class='time'>9:55 am</span></time>
       
       
 
@@ -330,10 +248,8 @@ s.setAttribute('data-timestamp', +new Date());
     
     <p class="meta" style="padding-top:23px">
       
-      <strong style="font-size:23px "><a class="basic-alignment left" href="/blog/2017/10/15/mo-sheng-jie-ye-you/" title="Previous Post: 万圣节夜游">&laquo; 万圣节夜游</a></strong>
+      <strong style="font-size:23px "><a class="basic-alignment left" href="/blog/2017/10/28/ai-system-at-sosp-17/" title="Previous Post: AI X system@SOSP'17">&laquo; AI X system@SOSP'17</a></strong>
       
-      
-      <strong style="font-size:23px "><a class="basic-alignment right" href="/blog/2017/12/29/my-2017/" title="Next Post: My 2017">My 2017 &raquo;</a></strong>
       
     </p>
   </footer>

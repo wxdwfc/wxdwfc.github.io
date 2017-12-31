@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://wxdwfc.github.io/blog/2017/12/29/my-2017/</loc>
+<lastmod>2017-12-29T09:55:34+08:00</lastmod>
+</url>
+<url>
 <loc>http://wxdwfc.github.io/blog/2017/10/28/ai-system-at-sosp-17/</loc>
 <lastmod>2017-10-28T08:35:37+08:00</lastmod>
 </url>
@@ -21,13 +25,13 @@
 <lastmod>2016-12-21T15:18:48+08:00</lastmod>
 </url>
 <url>
-<loc>http://wxdwfc.github.io/blog/archives/</loc>
+<loc>http://wxdwfc.github.io/blogs/</loc>
 </url>
 <url>
 <loc>http://wxdwfc.github.io/</loc>
 </url>
 <url>
-<loc>http://wxdwfc.github.io/blogs/</loc>
+<loc>http://wxdwfc.github.io/blog/archives/</loc>
 </url>
 <url>
 <loc>http://wxdwfc.github.io/test.html</loc>
