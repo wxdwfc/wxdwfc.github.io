@@ -262,7 +262,6 @@
 	    output('Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen');
 	    output('<br>');
 	    output('In proceedings of the 11th ACM European Conference on Computer Systems Principles.');
-
 		output('<br>');
 	    output('<br>');
 		output('<u>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</u>');
@@ -270,6 +269,13 @@
 	    output('Xingda Wei,Sijie Shen, Rong Chen, Haibo Chen');
 	    output('<br>');
 	    output('The 2017 USENIX Annual Technical Conference, SANTA CLARA,CA,USA,July,2017');
+		output('<br>');
+		output('<br>');
+		output('<u>Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better!</u>')
+	    output('<br>');
+		output('Xingda Wei,Zhiyuan Dong, Rong Chen, Haibo Chen');
+	    output('<br>');
+	    output('The 2018 USENIX Annual Symposium on Operating System Design and Implementation (OSDI), to appear')
 	}
 
 	function welcome() {
