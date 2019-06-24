@@ -16,7 +16,7 @@ div#wrapperHeader {
 }
 
 body{
-    margin: 0;
+    margin:0 auto;
 }
 
 body > p{
@@ -27,15 +27,6 @@ body > p{
 .entry-title1 {
     margin: 0 auto !important;
     max-width: 800px;
-}
-
-.center_cus {
-    width: 80vw;
-    margin-left: 9vw;
-}
-
-.center_left {
-    margin-left: -2vw;
 }
 
 .photo {
@@ -49,4 +40,9 @@ body > p{
     font-weight: 400;
     font-size: 14px;
     color: rgba(0,0,0,.42);
+}
+
+#kaola {
+    float:left;
+    margin-top: 27px;
 }

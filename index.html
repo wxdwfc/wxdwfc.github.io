@@ -22,11 +22,14 @@
   <link rel="canonical" href="http://wxdwfc.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/stylesheets/yue.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <!--<link href="/stylesheets/yue.css" media="screen, projection" rel="stylesheet" type="text/css">-->
+  <link href="/stylesheets/slider.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Stay simple, stay hungry." type="application/atom+xml">
-  <link rel="stylesheet" media="all" href="/stylesheets/terminal-1.0.0.min.css">
+  <!--<link rel="stylesheet" media="all" href="/stylesheets/terminal-1.0.0.min.css"> -->
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <!--
@@ -45,60 +48,11 @@
 </head>
 
 <body   class="collapse-sidebar sidebar-footer" >
-  <header role="banner" class="header">
-    <div id="wrapperHeader1" class="yue">
-  <div style="padding-top:5em">
-    <a href="/" style="color:hsla(0,0%,100%,.98); font-size:22px;font-weight:720;"> "以1页（page）而生的少年,
-      也写有比谁都闪耀的1行,
-      我是如此相信" <br /> <!-- &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;-->
-      - ’I’ Novel</a>
-  </div>
-</div>
-<style media="screen" type="text/css">
-div#wrapperHeader1 {
-width:100%; !important;
-height:100%; !important;
-background-image:url("/images/bg.jpg");
-background-size:100% 100%;
-margin-top: 0;
-padding-top: 0;
-}
-.header {
-height: 17vw;
-width:100vw;
-margin-left: 0;
-margin-right: 0;
-margin-top: 0;
-padding-top: 0;
-padding-bottom: 0 ;
-}
-body{
-margin: 0;
-}
-body > p{
-margin: 0 auto !important;
-max-width: 760px;
-}
-.center_cus {
-width: 60vw;
-margin-left: 19vw;
-}
+  <header role="banner" class="site_frame clearfix">
+    <h1 id="site_logo"><a href="/"><img src="/images/wxd_logo.png" alt="xmm"></a></h1>
 
-.center_cus1 {
-width: 60vw;
-margin-left: 20vw;
-}
-.header_title{
-margin:0 !important;
-
-}
-
-
-
-</style>
-
-  </header>
-  <nav class="center_cus" role="navigation"><ul class="subscribe" data-subscription="rss">
+    <!--
+<ul class="subscribe" data-subscription="rss">
   <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewbox="0 0 100 100"><path class="social" d="M 13.310204,73.332654 C 5.967347,73.332654 0,79.322448 0,86.621428 c 0,7.338776 5.967347,13.262246 13.310204,13.262246 7.370408,0 13.328572,-5.92245 13.328572,-13.262246 0,-7.29898 -5.958164,-13.288774 -13.328572,-13.288774 z M 0.01530612,33.978572 V 53.143878 C 12.493878,53.143878 24.229592,58.02347 33.068368,66.865306 41.894898,75.685714 46.767346,87.47449 46.767346,100 h 19.25 C 66.017346,63.592858 36.4,33.979592 0.01530612,33.978572 l 0,0 z M 0.03877552,0 V 19.17449 C 44.54796,19.17551 80.77551,55.437756 80.77551,100 H 100 C 100,44.87653 55.15102,0 0.03877552,0 z"></path></svg></a></li>
   
 </ul>
@@ -122,16 +76,68 @@ margin:0 !important;
         </fieldset>
       </form>
       
-      
+       -->
+<!--
 <ul class="main-navigation" style="font-size:19px; color: rgba(0,0,0,.36);">
   <li><a href="/"><strong style="color: rgba(0,0,0,.42);">XMM's site</strong></a></li>
   <li><a href="/blogs"><strong style="color: rgba(0,0,0,.42);">Blogs</strong></a></li>  
-</ul>
+</ul>-->
 
+<div id="sp_navigation">
+  <div id="sp_menu">
+	<div class="menubt1"></div>
+	<div class="menubt2"></div>
+	<div class="menubt3"></div>
+  </div>
+</div>
+<nav id="site_navigation">
+
+<!--<nav id="">-->
+		<ul class="clearfix">
+		  <li class="gnavi_news"><a href="/">Home</a><a href="/">主页</a></li>
+          <li class="gnavi_news"><a href="/blogs">Blogs</a><a href="/blogs">博客</a></li>
+          <li class="gnavi_terminal"><a href="">Terminal</a><a href="">命令行</a></li>
+          <li class="gnavi_pub"><a href="">Publications</a><a href="">发表论文</a></li>
+          <li class="gnavi_git"><a href="">Github</a><a href="">Github</a></li>
+		</ul>
+		<ul class="clearfix">
+		  <li class="gnavi_me"><a href="/about.html">About me</a><a href="/about.html">关于我</a></li>
+          <li class="gnavi_flicker"><a href="">Gallery</a><a href="">Flicker</a></li>
+          <li class="gnavi_flicker"><a href="">Game</a><a href="">小游戏</a></li>
+		</ul>
 </nav>
-  <div id="main1" class="yue center_cus">
+
+
+
+  </header>
+    <article class="visualBLock">
+<section class="main_visual">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" width="900px">
+    <!--    <div class="numbertext">1 / 2</div>-->
+    <a href="http://xmm4ok69.com/blog/2019/02/24/japan-tourism-2019/">
+      <img src="/images/19_slogen.png" style="width:100%;">
+
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+</div>
+<br>
+</section>
+</article>
+
+  <div id="main1" class="yue">
     <div id="content">
       <div >
+  <!--
   
   
   <script src="javascripts/terminal.js"></script>
@@ -139,7 +145,7 @@ margin:0 !important;
   <script>
     var terminal = new Terminal('terminal', {prompt: '', separator: '&gt;'}, {});
     terminal.setTheme('white');
-  </script>
+  </script>-->
 </div>
 
 <!--
@@ -163,7 +169,7 @@ margin:0 !important;
 
     </div>
   </div>
-  <footer class="center_cus" role="contentinfo"><p>
+  <footer class="" role="contentinfo"><p>
   Copyright &copy; 2019 - XingDa Wei -
   <span class="credit">Fonts supported by <a href="https://github.com/yue/yue">yue.</a></span>
   <span class="credit">Home terminal supported by <a href="https://github.com/SDA/terminal/blob/master/README.md">Terminal.js.</a></span>
@@ -171,19 +177,8 @@ margin:0 !important;
 
 </footer>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="/javascripts/slider.js"></script>
+<script src="/javascripts/nav.js"></script>
 
 </body>
 </html>
