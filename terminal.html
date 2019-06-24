@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://wxdwfc.github.io/about.html">
+  <link rel="canonical" href="http://wxdwfc.github.io/terminal.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <!--<link href="/stylesheets/yue.css" media="screen, projection" rel="stylesheet" type="text/css">-->
@@ -85,13 +85,17 @@
     <section class="main_visual">
   <div id="main1" class="yue">
     <div id="content">
-      <div class="blog-index yue">
+      <link rel="stylesheet" media="all" href="/stylesheets/terminal-1.0.0.min.css">
+<div >
+  
+  
+  <script src="javascripts/terminal.js"></script>
+  <div id ="terminal" class="blog-index"></div>
+  <script>
+    var terminal = new Terminal('terminal', {prompt: '', separator: '&gt;'}, {});
+    terminal.setTheme('white');
+  </script>
 </div>
-<aside class="sidebar">
-  
-    
-  
-</aside>
 
     </div>
   </div>

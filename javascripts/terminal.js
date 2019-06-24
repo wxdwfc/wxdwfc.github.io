@@ -228,12 +228,10 @@
 
 			output('<div class="no-align yue"' + font + '>');
 			output('<h3 class="header_title">魏星达&nbsp;&nbsp;&nbsp;&nbsp;XingDa Wei</h3>');
-			//		output('715 Broadway Room 719<br>');
-			//		output('New York, NY 10003<br>');
 			output('<code>Contact</code>: wxdwfc at gmail com<br />');
 			output('<code>Github</code>: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 
-			output('I\'m current a <code>p.h.d</code> student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank">(IPADS)</a>,SJTU.<br/>I\'m in the distributed system group advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/>');
+			output('I\'m current a phd student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank" style="text-decoration:underline;">(IPADS)</a>,SJTU.<br/>I\'m in the distributed system group advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/>');
 			output('I\'m a music lover!:)');
 			output('</ div">');
 	    //		output('<p>This lovely terminal emulator is from Eric Bidelman &lt;ericbidelman@chromium.org&gt; </p>');
@@ -280,11 +278,10 @@
 
 	function welcome() {
 
-	    output('<div>Welcome to XingDa\'s home-terminal~' +
-		   '</div>');
-	    output((new Date()).toLocaleString());
-	    about();
-	    output('<br />Please type <strong>"help"</strong> for available commands.');
+	    output('<div>Welcome to XingDa\'s home-terminal.');
+	    //output((new Date()).toLocaleString());
+	    //about();
+	    output('<br />Please type <strong>"help"</strong> for available commands.</div>');
 	}
 
 	function clear() {
