@@ -20,7 +20,7 @@ fieldset, img {
   border: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address, caption, cite, code, dfn, em, th, var {
   font-style: normal;
   font-weight: normal;
 }
@@ -491,7 +491,7 @@ html body .bx-viewport{
 .article_contents:first-child { padding-top: 0; }
 .article_title {
 	padding-bottom: 20px;
-	font-size: 17px;
+	font-size: 21px;
 }
 body .article_title a{
   color: #505050;
