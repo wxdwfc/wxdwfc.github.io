@@ -273,7 +273,13 @@
 	    output('<br>');
 		output('Xingda Wei,Zhiyuan Dong, Rong Chen, Haibo Chen');
 	    output('<br>');
-	    output('The 2018 USENIX Annual Symposium on Operating System Design and Implementation (OSDI), to appear')
+	    output('The 2018 USENIX Annual Symposium on Operating System Design and Implementation (OSDI)')
+        output('<br>');
+		output('<u>Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache</u>')
+	    output('<br>');
+		output('Xingda Wei,Rong Chen, Haibo Chen');
+	    output('<br>');
+	    output('The 2020 USENIX Annual Symposium on Operating System Design and Implementation (OSDI)')
 	}
 
 	function welcome() {
