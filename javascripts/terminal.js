@@ -231,7 +231,7 @@
 			output('<code>Contact</code>: wxdwfc at gmail com<br />');
 			output('<code>Github</code>: <a href="https://github.com/wxdwfc/" target="_blank">github.com/wxdwfc</a><br>')
 
-			output('I\'m current a phd student @institute of parallel and distributed systems<a href="http://ipads.se.sjtu.edu.cn" target="_blank" style="text-decoration:underline;">(IPADS)</a>,SJTU.<br/>I\'m in the distributed system group advised by two great professors <a href="http://ipads.se.sjtu.edu.cn/pub/members/rong_chen" target="_blank">Rong Chen</a> & <a href="http://ipads.se.sjtu.edu.cn/pub/members/haibo_chen" target="_blank">Haibo Chen</a>.<br/>');
+			output('<p> I am a (tenure track) Assistant Professor in <a href="https://ipads.se.sjtu.edu.cn"> the institute of parallel and distributed systems</a> at Shanghai Jiaotong University. My research focuses on computer systems and distributed systems, particularly how to design systems with emergency hardware technologies and design systems with machine learning technologies. </p>');
 			output('I\'m a music lover!:)');
 			output('</ div">');
 	    //		output('<p>This lovely terminal emulator is from Eric Bidelman &lt;ericbidelman@chromium.org&gt; </p>');
@@ -241,45 +241,43 @@
 	    output("<p> The game is started ! Be sure to use an HTML5 supported browser!</p>");
 	}
 
-		function blogs() {
-			window.open('http://xmm4ok69.com/blogs/');
-		}
+	function blogs() {
+		window.open('http://xmm4ok69.com/blogs/');
+	}
 
 	function pub() {
 	    output('<h2>Publications</h2>');
-	    output('<p>');
-	    output('<u>Fast In-memory Transaction Processing using RDMA and HTM</u>');
-	    output('<br>');
-	    output('Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, Haibo Chen');
-	    output('<br>');
-	    output('In proceedings of the 25th ACM Symposium on Operating Systems Principles. Monterey, CA, October, 2015.');
-	    output('<br>');
-	    output('<br>');
-	    output('<u>Fast and General Distributed Transactions Using RDMA and HTM</u>');
-	    output('<br>');
-	    output('Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, Haibo Chen');
-	    output('<br>');
-	    output('In proceedings of the 11th ACM European Conference on Computer Systems Principles.');
-		output('<br>');
-	    output('<br>');
-		output('<u>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</u>');
-	    output('<br>');
-	    output('Xingda Wei,Sijie Shen, Rong Chen, Haibo Chen');
-	    output('<br>');
-	    output('The 2017 USENIX Annual Technical Conference, SANTA CLARA,CA,USA,July,2017');
-		output('<br>');
-		output('<br>');
-		output('<u>Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better!</u>')
-	    output('<br>');
-		output('Xingda Wei,Zhiyuan Dong, Rong Chen, Haibo Chen');
-	    output('<br>');
-	    output('The 2018 USENIX Annual Symposium on Operating System Design and Implementation (OSDI)')
-        output('<br>');
-		output('<u>Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache</u>')
-	    output('<br>');
-		output('Xingda Wei,Rong Chen, Haibo Chen');
-	    output('<br>');
-	    output('The 2020 USENIX Annual Symposium on Operating System Design and Implementation (OSDI)')
+	    output('<p style = "line-height:1.5">');
+		output('<strong>[ATC\'21]</strong > Characterizing and Optimizing Remote Persistent Memory with RDMA and NVM')
+	    output('<br/>');		
+		output('<strong>Xingda Wei</strong>, Xiating Xie, Rong Chen, Haibo Chen, Binyu Zang');
+		output('<br/>');
+		output('<br/>');			
+		output('<strong>[NSDI\'21]</strong> Unifying Timestamp with Transaction Ordering for MVCC with Decentralized Scalar Timestamp')
+	    output('<br/>');		
+		output('<strong>Xingda Wei</strong>, Rong Chen, Haibo Chen, Zhaoguo Wang, Zhenhan Gong, and Binyu Zang');
+		output('<br/>');
+		output('<br/>');		
+		output('<strong>[OSDI\'20]</strong> Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache')
+	    output('<br/>');		
+		output('<strong>Xingda Wei</strong>, Rong Chen, Haibo Chen');
+		output('<br/>');
+		output('<br/>');
+		output('<strong>[OSDI\'18]</strong> Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better! ')
+	    output('<br/>');		
+		output('<strong>Xingda Wei</strong>, Zhiyuan Dong, Rong Chen, and Haibo Chen');
+		output('<br/>');
+		output('<br/>');		
+		output('<strong>[ATC\'17]</strong> Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing');
+	    output('<br/>');
+	    output('<strong>Xingda Wei</strong>, Sijie Shen, Rong Chen, Haibo Chen');
+		output('<br/>');
+		output('<br/>');
+		output('<strong> [SOSP\'15] </strong> Fast In-memory Transaction Processing using RDMA and HTM');
+	    output('<br/>');
+	    output('<strong>Xingda Wei</strong>, Jiaxin Shi, Yanzhe Chen, Rong Chen, Haibo Chen');
+	    output('<br/>');
+	    output('</p>');
 	}
 
 	function welcome() {
